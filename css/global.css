@@ -1,0 +1,54 @@
+@font-face {
+	font-family: "Lemon Milk";
+	font-weight: 400;
+	font-style: normal;
+	src: url("../font/Lemon\ Milk\ Pro\ Regular.otf");
+}
+@font-face {
+	font-family: "Lemon Milk";
+	font-weight: 400;
+	font-style: italic;
+	src: url("../font/Lemon\ Milk\ Pro\ Regular\ Italic.otf");
+}
+@font-face {
+	font-family: "Lemon Milk";
+	font-weight: 700;
+	font-style: normal;
+	src: url("../font/Lemon\ Milk\ Pro\ Bold.otf");
+}
+@font-face {
+	font-family: "Lemon Milk";
+	font-weight: 700;
+	font-style: italic;
+	src: url("../font/Lemon\ Milk\ Pro\ Bold\ Italic.otf");
+}
+@font-face {
+	font-family: "Lemon Milk";
+	font-weight: 300;
+	font-style: normal;
+	src: url("../font/Lemon\ Milk\ Pro\ Medium.otf");
+}
+@font-face {
+	font-family: "Lemon Milk";
+	font-weight: 300;
+	font-style: italic;
+	src: url("../font/Lemon\ Milk\ Pro\ Medium\ Italic.otf");
+}
+@font-face {
+	font-family: "Lemon Milk";
+	font-weight: 200;
+	font-style: normal;
+	src: url("../font/Lemon\ Milk\ Pro\ Ultra\ Light.otf");
+}
+@font-face {
+	font-family: "Lemon Milk";
+	font-weight: 200;
+	font-style: italic;
+	src: url("../font/Lemon\ Milk\ Pro\ Ultra\ Light\ Italic.otf");
+}
+
+body {
+	font-family: "Lemon Milk";
+	font-weight: 200;
+	font-style: italic;
+}
