@@ -76,7 +76,12 @@ body {
 	padding-left: 20px;
 	padding-right: 20px;
 	margin: 15px;
-	margin-top: 20px;
+	margin-top: 40px;
+	overflow: hidden;
+}
+
+.width-100 {
+	width: 100%;
 }
 
 h1,
@@ -87,6 +92,7 @@ h5,
 h6 {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	/* color: var(--quadairy-color); */
 }
 
 nav .active {
@@ -102,7 +108,7 @@ nav ul {
 		var(--primary-color),
 		var(--secondary-color)
 	);
-	border-bottom: 5px solid white;
+	border-bottom: 3px solid white;
 }
 
 nav li {
@@ -151,4 +157,32 @@ footer {
 
 .button:hover {
 	background-color: var(--secondary-color);
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-space-between {
+	justify-content: space-between;
+}
+
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+	.flex {
+		flex-direction: column;
+	}
+}
+
+a {
+	color: var(--quadairy-color);
+}
+
+.list-no-style {
+	list-style-type: none;
 }

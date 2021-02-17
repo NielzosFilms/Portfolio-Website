@@ -1,0 +1,28 @@
+.about-item {
+	width: 100%;
+}
+
+p {
+	font-size: 14px;
+}
+
+.portrait {
+	background-image: url("../images/Niels.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	border-radius: 100%;
+	width: 200px;
+	height: 200px;
+}
+
+.experience-item {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.experience-item .info {
+	font-size: 12px;
+	opacity: 0.5;
+}
