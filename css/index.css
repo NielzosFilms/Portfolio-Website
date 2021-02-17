@@ -1,0 +1,66 @@
+.nielzosFilmsBanner {
+	width: 100%;
+}
+
+.welcome {
+	font-size: 18px;
+}
+
+.welcome-right {
+	background-image: linear-gradient(
+		45deg,
+		var(--paper-color),
+		var(--background-color)
+	);
+}
+
+.image {
+	background-image: url("../images/backgroundImage.png");
+	background-repeat: repeat;
+	background-position: center;
+}
+
+.image .logo {
+	background-image: url("../images/Nielzos\ Films.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	border-radius: 100%;
+	width: 125px;
+	height: 125px;
+}
+
+.grid-container {
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+.grid-container > div {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.right-text {
+	padding: 0;
+	margin: 0;
+}
+
+.portfolio-button {
+	background-image: linear-gradient(
+		45deg,
+		var(--primary-color),
+		var(--secondary-color)
+	);
+	transition: box-shadow 0.3s;
+}
+
+.portfolio-button:hover {
+	box-shadow: 0 0px 3px 3px var(--tertairy-color);
+}

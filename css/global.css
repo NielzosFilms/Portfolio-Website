@@ -47,8 +47,108 @@
 	src: url("../font/Lemon\ Milk\ Pro\ Ultra\ Light\ Italic.otf");
 }
 
+:root {
+	--background-color: #181127;
+	--paper-color: #312446;
+	--primary-color: #7e01ff;
+	--secondary-color: #4d00fe;
+	--tertairy-color: #00d8ff;
+	--quadairy-color: #0078ff;
+}
+
 body {
 	font-family: "Lemon Milk";
 	font-weight: 200;
-	font-style: italic;
+	background-color: var(--background-color);
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+
+.box-shadow {
+	box-shadow: 0 2px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.paper-box {
+	background-color: var(--paper-color);
+	border-radius: 3px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 15px;
+	margin-top: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+nav .active {
+	color: var(--tertairy-color);
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-image: linear-gradient(
+		45deg,
+		var(--primary-color),
+		var(--secondary-color)
+	);
+	border-bottom: 5px solid white;
+}
+
+nav li {
+	float: left;
+}
+
+nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	background-color: transparent;
+	transition: background-color 0.3s;
+}
+
+nav li a:hover {
+	background-color: var(--quadairy-color);
+}
+
+nav .logo {
+	height: 40px;
+	float: right;
+	padding: 5px;
+}
+nav img {
+	height: 100%;
+}
+
+footer {
+	margin: 20px;
+	text-align: center;
+	color: var(--paper-color);
+}
+
+.button {
+	margin: 20px;
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 5px;
+	background-color: var(--quadairy-color);
+	text-decoration: none;
+	color: white;
+	transition: background-color 0.3s;
+}
+
+.button:hover {
+	background-color: var(--secondary-color);
 }
