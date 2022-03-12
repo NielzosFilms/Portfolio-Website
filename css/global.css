@@ -48,16 +48,17 @@
 }
 
 :root {
-	--background-color: #181127;
-	--paper-color: #312446;
-	--primary-color: #7e01ff;
-	--secondary-color: #4d00fe;
-	--tertairy-color: #00d8ff;
-	--quadairy-color: #0078ff;
+	--background-color: #1a2026;
+	--paper-color: #242d35;
+	--primary-color: #6ec1d6;
+	--secondary-color: #7fe4d2;
+	--tertairy-color: #cd84c8;
+	--quadairy-color: #f692b2;
 }
 
 body {
-	font-family: "Lemon Milk";
+	/* font-family: "Lemon Milk"; */
+	font-family: "Roboto", sans-serif;
 	font-weight: 200;
 	background-color: var(--background-color);
 	padding: 0;
@@ -71,7 +72,7 @@ body {
 }
 
 .box-shadow {
-	box-shadow: 0 2px 3px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .paper-box {
@@ -124,6 +125,7 @@ h6 {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	/* color: var(--quadairy-color); */
+	font-family: "Lemon Milk";
 }
 
 nav .active {
@@ -154,6 +156,7 @@ nav li a {
 	text-decoration: none;
 	background-color: transparent;
 	transition: background-color 0.3s;
+	font-family: "Lemon Milk";
 }
 
 nav li a:hover {
