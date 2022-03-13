@@ -29,6 +29,7 @@ p {
 
 .list-diamonds {
 	list-style: none;
+	padding-left: 10px;
 }
 
 .list-diamonds li::before {

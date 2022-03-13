@@ -67,6 +67,7 @@ body {
 	margin: 0;
 	color: white;
 	background-repeat: no-repeat;
+	min-height: 100vh;
 }
 
 .box-shadow {
@@ -162,7 +163,7 @@ nav img {
 }
 
 footer {
-	margin: 20px;
+	padding: 20px;
 	text-align: center;
 	color: var(--gray);
 }
