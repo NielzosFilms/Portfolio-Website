@@ -50,10 +50,12 @@
 :root {
 	--background-color: #1a2026;
 	--paper-color: #242d35;
+	--gray: #526170;
 	--primary-color: #6ec1d6;
 	--secondary-color: #7fe4d2;
 	--tertairy-color: #cd84c8;
 	--quadairy-color: #f692b2;
+	--green: #94cf95;
 }
 
 body {
@@ -64,10 +66,6 @@ body {
 	padding: 0;
 	margin: 0;
 	color: white;
-	background-image: linear-gradient(
-		var(--paper-color),
-		var(--background-color)
-	);
 	background-repeat: no-repeat;
 }
 
@@ -77,27 +75,21 @@ body {
 
 .paper-box {
 	background-color: var(--paper-color);
-	border-radius: 3px;
-	padding: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin: 15px;
-	margin-top: 40px;
+	border-radius: 8px;
+	padding: 40px;
+	margin: 20px;
 	overflow: hidden;
 }
 
 .paper-box-no-padding {
 	background-color: var(--paper-color);
 	border-radius: 3px;
-	margin: 15px;
-	margin-top: 40px;
+	margin: 20px;
 	overflow: hidden;
 }
 
 .box-padding {
-	padding: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 40px;
 }
 
 .width-100 {
@@ -129,19 +121,14 @@ h6 {
 }
 
 nav .active {
-	color: var(--tertairy-color);
+	color: var(--primary-color);
 }
 nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-image: linear-gradient(
-		45deg,
-		var(--primary-color),
-		var(--secondary-color)
-	);
-	border-bottom: 3px solid white;
+	background-color: var(--paper-color);
 }
 
 nav li {
@@ -160,13 +147,15 @@ nav li a {
 }
 
 nav li a:hover {
-	background-color: var(--quadairy-color);
+	background-color: var(--primary-color);
+	color: white;
 }
 
 nav .logo {
 	height: 40px;
 	float: right;
 	padding: 5px;
+	opacity: 0.2;
 }
 nav img {
 	height: 100%;
@@ -175,7 +164,7 @@ nav img {
 footer {
 	margin: 20px;
 	text-align: center;
-	color: var(--paper-color);
+	color: var(--gray);
 }
 
 .button {

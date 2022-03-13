@@ -26,3 +26,15 @@ p {
 	font-size: 12px;
 	opacity: 0.5;
 }
+
+.list-diamonds {
+	list-style: none;
+}
+
+.list-diamonds li::before {
+	color: var(--green);
+	content: "◆";
+	display: inline-block;
+	margin-right: 0.5rem;
+	margin-top: 0.3rem;
+}
