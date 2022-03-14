@@ -70,6 +70,17 @@ body {
 	min-height: 100vh;
 }
 
+.content-container {
+	width: 80%;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+@media screen and (max-width: 800px) {
+	.content-container {
+		width: 100%;
+	}
+}
+
 .box-shadow {
 	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -84,7 +95,7 @@ body {
 
 .paper-box-no-padding {
 	background-color: var(--paper-color);
-	border-radius: 3px;
+	border-radius: 8px;
 	margin: 20px;
 	overflow: hidden;
 }
