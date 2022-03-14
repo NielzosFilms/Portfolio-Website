@@ -10,6 +10,14 @@
 	background-image: url("../images/tetris_game_preview.png");
 }
 
+.eww-dashboard-image {
+	background-image: url("../images/eww_dashboard.png");
+}
+
+.dammen-image {
+	background-image: url("../images/bit_academy_dammen.png");
+}
+
 .discord-image {
 	background-image: url("https://1000merken.com/wp-content/uploads/2021/02/Discord-Logo.png");
 }

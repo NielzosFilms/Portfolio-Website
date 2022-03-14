@@ -136,8 +136,13 @@ h6 {
 	font-family: "Lemon Milk";
 }
 
+.muted {
+	color: rgba(255, 255, 255, 0.3);
+}
+
 nav .active {
 	color: var(--primary-color);
+	border-bottom: 1px solid var(--primary-color);
 }
 nav ul {
 	list-style-type: none;
