@@ -30,6 +30,13 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	min-height: 300px;
+	width: 75%;
+}
+@media screen and (max-width: 800px) {
+	.image {
+		width: 100%;
+	}
 }
 
 .paper-box-no-padding {
