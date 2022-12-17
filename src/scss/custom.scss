@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira Code:wght@400;500;600;700&display=swap');
+
+h1 {
+    @apply text-4xl md:text-7xl font-bold tracking-wide my-6 !important;
+}
+h2 {
+    @apply text-4xl md:text-6xl font-bold tracking-wide my-5 !important;
+}
+h3 {
+    @apply text-4xl md:text-5xl font-bold tracking-wide my-4 !important;
+}
+
+nav {
+    transition: transform 300ms ease;
+    position: absolute;
+    top: 0;
+    height: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo {
+    height: 32px;
+}
+.fixed-nav {
+    transform: translateY(-125%);
+    position: fixed;
+    top: 0;
+}
+.fixed-nav-show {
+    @apply shadow-lg;
+    transform: none;
+}
+
+a:not(.button) {
+    @apply text-mintgreen-800 !important;
+    position: relative;
+}
+a:not(.button)::after {
+    @apply bg-mintgreen-800;
+    @apply transition-all;
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    position: absolute;
+    left: 1px;
+    bottom: 0.1rem;
+    opacity: 0.3;
+}
+a:not(.button):hover::after{
+    width: 100%;
+}
+
+a.button {
+    @apply text-mintgreen-800;
+}

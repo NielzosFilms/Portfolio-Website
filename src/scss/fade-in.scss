@@ -1,0 +1,20 @@
+.fade-in-title-paragraph {
+  opacity: 0;
+  transform: translateY(-50px);
+  visibility: hidden;
+  transition: opacity 0.75s cubic-bezier(.21,.6,.88,1), transform 0.5s cubic-bezier(.21,.6,.88,1);
+  will-change: opacity, visibility;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(-50px);
+  visibility: hidden;
+  transition: opacity 0.75s cubic-bezier(.21,.6,.88,1), transform 0.5s cubic-bezier(.21,.6,.88,1);
+  will-change: opacity, visibility;
+}
+.fade-in-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}

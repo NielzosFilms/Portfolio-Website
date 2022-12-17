@@ -1,4 +1,7 @@
 /* Custom imports */
+@import "./scss/custom.scss";
+@import "./scss/fade-in.scss";
+@import "./scss/typewriter.scss";
 
 /* Tailwind requirements */
 @tailwind base;

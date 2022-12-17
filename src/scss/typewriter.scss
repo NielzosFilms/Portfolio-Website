@@ -1,0 +1,19 @@
+.typewriter {
+  visibility: hidden;
+  width: fit-content;
+}
+
+/* Animation */
+.caret {
+  border-right: 2px solid;
+  animation: blink-caret 750ms steps(20) infinite normal;
+}
+
+.visible {
+  visibility: visible;
+}
+
+@keyframes blink-caret {
+  from { border-right-color: inherit; }
+  to { border-right-color: transparent; }
+}
