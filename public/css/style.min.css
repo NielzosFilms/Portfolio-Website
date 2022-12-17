@@ -488,9 +488,9 @@ video {
   font-weight: 700;
 }
 
-.text-seance-500 {
+.text-violet-500 {
   --tw-text-opacity: 1;
-  color: rgb(126 42 159 / var(--tw-text-opacity));
+  color: rgb(156 25 224 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -513,7 +513,7 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hover\:text-seance-300:hover {
+.hover\:text-violet-300:hover {
   --tw-text-opacity: 1;
-  color: rgb(203 108 216 / var(--tw-text-opacity));
+  color: rgb(188 94 237 / var(--tw-text-opacity));
 }
