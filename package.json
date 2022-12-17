@@ -1,0 +1,20 @@
+{
+    "name": "portfolio-website",
+    "scripts": {
+        "watch": "concurrently --kill-others \"npm run watch:postcss\" \"live-server --no-browser ./public\"",
+        "watch:node-sass": "node-sass --recursive --include-path scss src/scss/ -o dist/css/ --watch",
+        "watch:tailwind": "tailwindcss -i ./src/main.css -o ./public/css/style.min.css --watch",
+        "watch:postcss": "postcss ./src/main.css -o ./public/css/style.min.css --watch",
+        "build": "NODE_ENV=production postcss ./src/main.css -o ./public/css/style.min.css"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.13",
+        "concurrently": "^7.6.0",
+        "cssnano": "^5.1.14",
+        "live-server": "^1.2.2",
+        "node-sass": "^8.0.0",
+        "postcss-cli": "^10.1.0",
+        "postcss-import": "^15.1.0",
+        "tailwindcss": "^3.2.4"
+    }
+}
