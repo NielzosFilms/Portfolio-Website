@@ -1,18 +1,22 @@
 {
     "name": "portfolio-website",
     "scripts": {
-        "watch": "concurrently --kill-others \"npm run watch:postcss\" \"live-server --no-browser ./public\"",
+        "watch": "concurrently --kill-others \"npm run watch:postcss\" \"npm run watch:postcss-dev\" \"npm run watch:ejs\" \"live-server --no-browser ./public\"",
         "watch:node-sass": "node-sass --recursive --include-path scss src/scss/ -o dist/css/ --watch",
         "watch:tailwind": "tailwindcss -i ./src/main.css -o ./public/css/style.min.css --watch",
         "watch:postcss": "postcss ./src/main.css -o ./public/css/style.min.css --watch",
-        "build": "NODE_ENV=production postcss ./src/main.css -o ./public/css/style.min.css"
+        "watch:postcss-dev": "postcss ./src/main.css -o ./src/css/style.min.css --watch",
+        "watch:ejs": "nodemon -w src -e html,css,json,js,ejs --exec node compile-ejs.js",
+        "build": "NODE_ENV=production node compile-ejs.js && postcss ./src/main.css -o ./public/css/style.min.css"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.13",
         "concurrently": "^7.6.0",
         "cssnano": "^5.1.14",
+        "ejs": "^3.1.8",
         "live-server": "^1.2.2",
         "node-sass": "^8.0.0",
+        "nodemon": "^2.0.20",
         "postcss-cli": "^10.1.0",
         "postcss-import": "^15.1.0",
         "tailwindcss": "^3.2.4"

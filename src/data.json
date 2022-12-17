@@ -1,0 +1,11 @@
+{
+    "name": "Niels Hazelaar",
+    "person": {
+        "age": "20"
+    },
+    "texts": [
+        "Hello world!",
+        "Hi there",
+        "Awesome!"
+    ]
+}
