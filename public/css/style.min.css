@@ -91,8 +91,16 @@ a:not(.button):hover::after{
     width: 100%;
 }
 a.button{
-    --tw-text-opacity: 1;
-    color: rgb(15 236 183 / var(--tw-text-opacity));
+    border-radius: 0.25rem !important;
+    border-width: 1px !important;
+    --tw-border-opacity: 1 !important;
+    border-color: rgb(15 236 183 / var(--tw-border-opacity)) !important;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    --tw-text-opacity: 1 !important;
+    color: rgb(15 236 183 / var(--tw-text-opacity)) !important;
 }
 .fade-in-title-paragraph {
   opacity: 0;
@@ -576,8 +584,13 @@ video {
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
-.mt-20{
-    margin-top: 5rem;
+.mx-6{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .flex{
     display: flex;
@@ -589,20 +602,38 @@ video {
     height: -moz-fit-content;
     height: fit-content;
 }
+.h-auto{
+    height: auto;
+}
+.h-full{
+    height: 100%;
+}
+.h-1\/2{
+    height: 50%;
+}
 .w-full{
     width: 100%;
 }
 .w-3\/5{
     width: 60%;
 }
+.w-24{
+    width: 6rem;
+}
 .items-center{
     align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
 }
 .justify-around{
     justify-content: space-around;
 }
 .scroll-smooth{
     scroll-behavior: smooth;
+}
+.rounded{
+    border-radius: 0.25rem;
 }
 .bg-paper-500{
     --tw-bg-opacity: 1;
@@ -611,6 +642,10 @@ video {
 .bg-paper-500\/30{
     background-color: rgb(19 16 40 / 0.3);
 }
+.bg-paper-400{
+    --tw-bg-opacity: 1;
+    background-color: rgb(36 33 57 / var(--tw-bg-opacity));
+}
 .p-6{
     padding: 1.5rem;
 }
@@ -618,12 +653,12 @@ video {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
+.py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
 .font-mono{
     font-family: Fira Code, monospace;
-}
-.text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
 }
 .text-lg{
     font-size: 1.125rem;
@@ -635,9 +670,6 @@ video {
 }
 .font-bold{
     font-weight: 700;
-}
-.tracking-wide{
-    letter-spacing: 0.025em;
 }
 .text-white{
     --tw-text-opacity: 1;
@@ -687,9 +719,5 @@ video {
 @media (min-width: 768px){
     .md\:max-w-screen-lg{
         max-width: 1024px;
-    }
-    .md\:text-7xl{
-        font-size: 4.5rem;
-        line-height: 1;
     }
 }

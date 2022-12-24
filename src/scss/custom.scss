@@ -55,5 +55,5 @@ a:not(.button):hover::after{
 }
 
 a.button {
-    @apply text-mintgreen-800;
+    @apply text-mintgreen-800 px-3 py-2 border border-mintgreen-800 rounded !important;
 }

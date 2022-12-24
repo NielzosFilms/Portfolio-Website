@@ -16,7 +16,6 @@ function fadeIn() {
     fadeInElements.forEach(elem => {
         const windowHeight = window.innerHeight;
         const elementTop = elem.getBoundingClientRect().top;
-        console.log(windowHeight, elementTop);
         if (elementTop < windowHeight - 150) {
             elem.classList.add("fade-in-visible");
         }
