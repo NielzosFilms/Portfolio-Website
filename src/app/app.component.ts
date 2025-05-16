@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { animate, query, style, transition, trigger } from '@angular/animations';
 import { HeaderComponent } from './header/header.component';
+import { SocialsComponent } from './socials/socials.component';
 
 export const fadeAnimation = trigger('routeAnimations', [
     transition('* <=> *', [
@@ -20,7 +21,7 @@ export const fadeAnimation = trigger('routeAnimations', [
 
 @Component({
     selector: 'app-root',
-    imports: [RouterOutlet, HeaderComponent],
+    imports: [RouterOutlet, HeaderComponent, SocialsComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
     animations: [fadeAnimation]
