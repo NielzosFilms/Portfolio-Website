@@ -1,16 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --font-brand: 'Montserrat';
+    --font-body: 'Raleway';
+    --font-mono: 'IBM Plex Mono';
+}
 
 body {
-    color: var(--text-main);
-    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+    font-family: var(--font-body), sans-serif;
     font-weight: 400;
     letter-spacing: 0.5px;
     line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: -0.5px;
+    font-family: var(--font-brand), sans-serif;
+    letter-spacing: 2px;
     line-height: 1.2;
     font-weight: 600;
     margin-top: 0;
@@ -18,7 +26,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     letter-spacing: 0.5px;
     line-height: 1.75;
@@ -38,8 +45,17 @@ a {
 }
 
 button {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-family: var(--font-brand), sans-serif;
+    font-weight: 700;
     letter-spacing: 0.5px;
     line-height: 1.4;
+}
+
+.typography__display {
+    color: var(--primary-5);
+    letter-spacing: 1rem;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 }

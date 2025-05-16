@@ -3,7 +3,7 @@
 @use 'styles/_spacers';
 
 html {
-    background: var(--background-main);
+    background: var(--neutral-5);
 }
 
 body {
@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: var(--spacer-8);
-    color: var(--text-main);
+    color: var(--primary-1);
     margin-bottom: var(--spacer-64);
 }
 
@@ -24,20 +24,20 @@ body {
 button {
     border: none;
     padding: var(--spacer-12) var(--spacer-32);
-    background: var(--color-primary);
-    color: var(--text-on-primary);
+    background: var(--primary-5);
+    color: var(--neutral-9);
     border-radius: var(--border-radius-rounded);
     cursor: pointer;
 
     &:hover {
-        background: linear-gradient(0deg, var(--alpha-white-10), var(--alpha-white-10)), var(--color-primary);
+        background: linear-gradient(0deg, var(--alpha-white-10), var(--alpha-white-10)), var(--primary-5);
     }
 }
 
 .button--secondary {
     background: transparent;
     border: 2px solid var(--color-secondary);
-    color: var(--text-main);
+    color: var(--text);
 
     &:hover {
         background: var(--alpha-white-10);
@@ -46,7 +46,7 @@ button {
 
 .button--ghost {
     background: transparent;
-    color: var(--text-main);
+    color: var(--text);
 
     &:hover {
         background: var(--alpha-white-10);

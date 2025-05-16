@@ -1,17 +1,23 @@
 :root {
-    /* Backgrounds */
-    --background-main: #010810;
-    --background-layer-1: #100e1c;
+    --neutral-1: hsl(354, 2%, 88%);
+    --neutral-2: hsl(354, 3%, 66%);
+    --neutral-3: hsl(354, 5%, 40%);
+    --neutral-4: hsl(354, 8%, 23%);
+    --neutral-5: hsl(354, 12%, 14%);
+    --neutral-6: hsl(354, 18%, 11%);
+    --neutral-7: hsl(354, 24%, 8%);
+    --neutral-8: hsl(354, 28%, 6%);
+    --neutral-9: hsl(354, 30%, 3%);
 
-    /* Primary and Secondary Colors */
-    --color-primary: #ff44f1;
-    --color-secondary: #3c2f69;
-
-    /* Text Colors */
-    --text-main: #f5f5f5;
-    --text-muted: #a2a2a2;
-
-    --text-on-primary: #0c0917;
+    --primary-1: hsl(267, 100%, 94%);
+    --primary-2: hsl(267, 100%, 90%);
+    --primary-3: hsl(267, 100%, 85%);
+    --primary-4: hsl(267, 96%, 81%);
+    --primary-5: hsl(267, 93%, 77%);
+    --primary-6: hsl(267, 52%, 61%);
+    --primary-7: hsl(267, 39%, 47%);
+    --primary-8: hsl(267, 33%, 34%);
+    --primary-9: hsl(267, 30%, 24%);
 
     --alpha-white-10: rgba(255, 255, 255, 0.1);
     --alpha-white-20: rgba(255, 255, 255, 0.2);
