@@ -1,15 +1,83 @@
+$spacers: (
+    2: 0.125rem,
+    4: 0.25rem,
+    6: 0.375rem,
+    8: 0.5rem,
+    12: 0.75rem,
+    16: 1rem,
+    20: 1.25rem,
+    24: 1.5rem,
+    32: 2rem,
+    48: 3rem,
+    64: 4rem,
+    80: 5rem,
+    96: 6rem
+);
+
 :root {
-    --spacer-2: 2px;
-    --spacer-4: 4px;
-    --spacer-6: 6px;
-    --spacer-8: 8px;
-    --spacer-12: 12px;
-    --spacer-16: 16px;
-    --spacer-20: 20px;
-    --spacer-24: 24px;
-    --spacer-32: 32px;
-    --spacer-48: 48px;
-    --spacer-64: 64px;
+    --spacer-2: 0.125rem;
+    --spacer-4: 0.25rem;
+    --spacer-6: 0.375rem;
+    --spacer-8: 0.5rem;
+    --spacer-12: 0.75rem;
+    --spacer-16: 1rem;
+    --spacer-20: 1.25rem;
+    --spacer-24: 1.5rem;
+    --spacer-32: 2rem;
+    --spacer-48: 3rem;
+    --spacer-64: 4rem;
+    --spacer-80: 5rem;
+    --spacer-96: 6rem;
 
     --border-radius-rounded: 9999px;
+}
+
+@each $key, $value in $spacers {
+    .m-#{$key} {
+        margin: $value;
+    }
+    .mt-#{$key} {
+        margin-top: $value;
+    }
+    .mr-#{$key} {
+        margin-right: $value;
+    }
+    .mb-#{$key} {
+        margin-bottom: $value;
+    }
+    .ml-#{$key} {
+        margin-left: $value;
+    }
+    .mx-#{$key} {
+        margin-left: $value;
+        margin-right: $value;
+    }
+    .my-#{$key} {
+        margin-top: $value;
+        margin-bottom: $value;
+    }
+
+    .p-#{$key} {
+        padding: $value;
+    }
+    .pt-#{$key} {
+        padding-top: $value;
+    }
+    .pr-#{$key} {
+        padding-right: $value;
+    }
+    .pb-#{$key} {
+        padding-bottom: $value;
+    }
+    .pl-#{$key} {
+        padding-left: $value;
+    }
+    .px-#{$key} {
+        padding-left: $value;
+        padding-right: $value;
+    }
+    .py-#{$key} {
+        padding-top: $value;
+        padding-bottom: $value;
+    }
 }

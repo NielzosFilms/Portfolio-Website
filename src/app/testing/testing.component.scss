@@ -1,0 +1,39 @@
+.colors {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacer-12);
+    margin-bottom: var(--spacer-24);
+    flex-grow: 1;
+
+    div {
+        width: 100%;
+        height: var(--spacer-16);
+        border-radius: var(--spacer-8);
+    }
+
+    &__primary {
+        @extend .colors;
+
+        @for $i from 1 through 9 {
+            div:nth-child(#{$i}) {
+                background-color: var(--primary-#{$i});
+            }
+        }
+    }
+
+    &__neutral {
+        @extend .colors;
+
+        @for $i from 1 through 9 {
+            div:nth-child(#{$i}) {
+                background-color: var(--neutral-#{$i});
+            }
+        }
+    }
+}
+
+.container {
+    margin-top: var(--spacer-32);
+    display: flex;
+    gap: var(--spacer-24);
+}

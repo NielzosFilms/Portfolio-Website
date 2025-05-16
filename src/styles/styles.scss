@@ -1,0 +1,14 @@
+@use '_colors';
+@use '_typography';
+@use '_html-overrides';
+@use '_spacers';
+
+body {
+    margin: 0;
+    background: var(--neutral-5);
+    color: var(--neutral-1);
+}
+
+* {
+    box-sizing: border-box;
+}

@@ -1,0 +1,27 @@
+:host {
+    & {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.container {
+    max-width: 500px;
+    padding: var(--spacer-24) var(--spacer-48);
+    margin: var(--spacer-24) var(--spacer-48);
+    border-left: 1px solid var(--neutral-3);
+
+    &__description {
+        margin-bottom: var(--spacer-32);
+        color: var(--neutral-2);
+    }
+
+    &__buttons {
+        display: flex;
+        gap: var(--spacer-8);
+        flex-wrap: wrap;
+    }
+}

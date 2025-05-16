@@ -1,0 +1,37 @@
+:host {
+    & {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--spacer-32);
+        padding: var(--spacer-16);
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacer-12);
+}
+
+.name {
+    font-family: var(--font-brand), sans-serif;
+    color: var(--neutral-3);
+    font-size: var(--font-size-l);
+    letter-spacing: 0.1rem;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.neutral {
+    color: var(--neutral-3);
+
+    &--active {
+        color: var(--neutral-2);
+    }
+}

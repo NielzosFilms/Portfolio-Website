@@ -1,39 +1,5 @@
-<h1>Portfolio Niels</h1>
+<app-header />
 
-<h1 class="typography__display">Niels Hazelaar</h1>
-
-<app-card>
-    <p>Some stuff about me</p>
-
-    <button>Hello world</button>
-    <button class="button--secondary">Hello world</button>
-    <button class="button--ghost">Hello world</button>
-
-    <a>Click here to go somewhere</a>
-</app-card>
-
-<div class="container">
-    <div class="colors__primary">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-
-    <div class="colors__neutral">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+<div [@routeAnimations]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
 </div>
